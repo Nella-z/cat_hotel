@@ -38,3 +38,7 @@ cat_hotel/
 ## Планы
 
 - [ ] Перенос на WordPress: собственная тема, динамические номера и отзывы
+
+
+## Ссылка
+https://nella-z.github.io/cat_hotel/
