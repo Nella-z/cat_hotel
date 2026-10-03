@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Котейка</title>
+
+ <link rel="icon" href="images/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+
+</head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+       <img src="images/logo.svg" alt="логотип">
+         <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#hotel" class="menu__link">Почему мы?</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#room" class="menu__link">Номера</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#comment" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#how__find" class="menu__link">Как нас найти</a>
+                        </li>
+                    </ul>
+                </nav>
+      </div>
+    </header>
+   <section class="hotel" id="hotel">
+    
+    <img src="images/home_header.jpg" alt="фон" class="hotel__img">
+<p class="city">Санкт-Петербург</p>
+<h1>Котейка</h1>
+<p class="hotel__inf">Уютная гостиница для котов и кошек</p>
+<a href="tel:88003335599"  class="booking__btn hotel__btn">Забронировать <img src="images/booking.svg" alt="бронь"></a>
+   </section>
+   <section class="why-us">
+    <img src="images/paw_why_are_we.svg" alt="лапка"  class="paw__why-us">
+    <h2>Почему мы?</h2>
+<div class="why-us__container">
+  <div class="why-us__inf">
+    <img src="images/temperature.svg" class="why-us__img" alt="температура">
+    <h3>Комфортная температура</h3>
+    <p>Во всех номерах поддерживается комфортная температура в пределах
+23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру. </p>
+  </div>
+
+  <div class="why-us__inf">
+    <img src="images/Video_surveillance.svg" class="why-us__img" alt="Видеонаблюдение">
+    <h3>Видеонаблюдение</h3>
+    <p>Мы предоставляем доступ в нашу систему. Вы сможете следить
+за своим питомцем со своего смартфона или компьютера. </p>
+  </div>
+
+  <div class="why-us__inf">
+    <img src="images/taxi.svg" class="why-us__img" alt="Зоотакси">
+    <h3>Услуги Зоотакси</h3>
+    <p>Мы приедем за вашим питомцем в любой район Санкт-Петербурга. </p>
+  </div>
+
+  <div class="why-us__inf">
+    <img src="images/nutrition.svg"  class="why-us__img" alt="питание">
+    <h3>Сбалансированное питание</h3>
+    <p>Во всех номерах поддерживается комфортная температура в пределах
+23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру. </p>
+  </div>
+
+  <div class="why-us__inf">
+    <img src="images/strolls.svg"  class="why-us__img" alt="прогулки">
+    <h3>Ежедневные прогулки</h3>
+    <p>По вашему желанию мы выгуливаем вашего питомца два раза в день
+на специализированной закрытой территории.</p>
+  </div>
+
+  <div class="why-us__inf">
+    <img src="images/veterinarians.svg"  class="why-us__img" alt="ветеринары">
+    <h3>Лучшие ветеринары</h3>
+    <p>В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости. </p>
+  </div>
+</div>
+   </section>
+
+<section class="room" id="room">
+<h2>Номера</h2>
+<img src="images/fish.svg" alt="" class="fish">
+<div class="room__swiper">
+  <div class=" swiper-wrapper room__swiper-wrapper">
+    <div class="swiper-slide  room__swiper-slide">
+      <div class="room__photo">
+<img src="images/nomer.jpg" alt="Эконом плюс">
+      </div>
+      <div class="room__inf">
+        <h3>Эконом плюс</h3>
+        <ul>
+          <li>Площадь - 0,90 м2</li>
+          <li>Размеры (ШхГхВ) — 90х100х180 см</li>
+          <li>Цена за сутки: 200₽</li>
+         
+        </ul>
+         <a href="tel:88003335599" class="booking__btn room__btn">Забронировать <img src="images/booking.svg" alt="бронь"></a>
+      </div>
+    </div>
+     <div class="swiper-slide room__swiper-slide">
+      <div class="room__photo">
+<img src="images/nomer.jpg" alt="Эконом плюс">
+      </div>
+      <div class="room__inf">
+        <h3>Комфорт</h3>
+        <ul>
+          <li>Площадь - 1,13 м2</li>
+          <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+          <li>Цена за сутки: 250₽</li>
+         
+        </ul>
+         <a href="tel:88003335599" class="booking__btn room__btn">Забронировать <img src="images/booking.svg" alt="бронь"></a>
+      </div>
+    </div>
+    <div class="swiper-slide room__swiper-slide">
+      <div class="room__photo">
+<img src="images/nomer.jpg" alt="Эконом плюс">
+      </div>
+      <div class="room__inf">
+        <h3>Сьют</h3>
+        <ul>
+          <li>Площадь - 1,56 м2</li>
+          <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+          <li>Цена за сутки: 350₽</li>
+          
+
+        </ul>
+        <a href="tel:88003335599" class="booking__btn room__btn">Забронировать <img src="images/booking.svg" alt="бронь"></a>
+      </div>
+    </div>
+  </div>
+  <div class="direction_swiper">
+  <div class="room__swiper-pagination"></div>
+
+  <div class="swiper-button">
+  <div class="swiper__arrow-prev"><img src="images/swiper-button-next.svg" alt="назад"></div>
+<div class="swiper__arrow-next"><img src="images/swiper-button-prev.svg" alt="назад"></div></div></div>
+
+</div>
+</section>
+
+
+<section class="comment" id="comment">
+<h2>Отзывы</h2>
+<img src="images/paw_reviews.svg"  alt="лапка"  class="paw__why-us">
+<div class="comment__swiper">
+  <div class=" swiper-wrapper comment__swiper-wrapper">
+       <div class="swiper-slide  comment__swiper-slide">
+<img src="images/comment.svg" alt="">
+<div class="comment__swiper-text">
+  <div class="comment__swiper-name"><p>Первый раз пришлось оставить нашего котика
+в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
+И мы и котик остались очень довольны!</p></div>
+<div class="comment__swiper-inf">
+  <p class="comment__swiper-fio">Валерия Гришаева</p>
+<p class="comment__swiper-data">15 ноября, 2019</p></div>
+
+</div>
+    </div>
+       <div class="swiper-slide  comment__swiper-slide">
+<img src="images/comment.svg" alt="">
+<div class="comment__swiper-text">
+  <div class="comment__swiper-name"><p>Первый раз пришлось оставить нашего котика
+в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
+И мы и котик остались очень довольны!</p></div>
+<div class="comment__swiper-inf">
+  <p class="comment__swiper-fio">Валерия Гришаева</p>
+<p class="comment__swiper-data">15 ноября, 2019</p></div>
+
+</div>
+    </div>
+       <div class="swiper-slide  comment__swiper-slide">
+<img src="images/comment.svg" alt="">
+<div class="comment__swiper-text">
+  <div class="comment__swiper-name"><p>Первый раз пришлось оставить нашего котика
+в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
+И мы и котик остались очень довольны!</p></div>
+<div class="comment__swiper-inf">
+  <p class="comment__swiper-fio">Валерия Гришаева</p>
+<p class="comment__swiper-data">15 ноября, 2019</p></div>
+
+</div>
+    </div>
+       <div class="swiper-slide  comment__swiper-slide">
+<img src="images/comment.svg" alt="">
+<div class="comment__swiper-text">
+  <div class="comment__swiper-name"><p>Первый раз пришлось оставить нашего котика
+в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
+И мы и котик остались очень довольны!</p></div>
+<div class="comment__swiper-inf">
+  <p class="comment__swiper-fio">Валерия Гришаева</p>
+<p class="comment__swiper-data">15 ноября, 2019</p></div>
+
+</div>
+    </div>
+    <div class="swiper-slide  comment__swiper-slide">
+<img src="images/comment.svg" alt="">
+<div class="comment__swiper-text">
+  <div class="comment__swiper-name"><p>Первый раз пришлось оставить нашего котика
+в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует.
+И мы и котик остались очень довольны!</p></div>
+<div class="comment__swiper-inf">
+  <p class="comment__swiper-fio">Валерия Гришаева</p>
+<p class="comment__swiper-data">15 ноября, 2019</p></div>
+
+</div>
+    </div>
+  
+  </div>
+  <div class="direction_swiper">
+  <div class="comment__swiper-pagination"></div>
+
+  <div class="swiper-button">
+  <div class="swiper__arrow-prev"><img src="images/swiper-button-next.svg" alt="назад"></div>
+<div class="swiper__arrow-next"><img src="images/swiper-button-prev.svg" alt="назад"></div></div></div>
+
+</div>
+</section>
+<section class="how__find"  id="how__find"> 
+<div class="how__find-inf">
+  <h2>Как нас найти</h2>
+  <div class="how__find-list">
+<div class="how__find-utim">
+  <h3>Адрес</h3>
+  <p>Санкт-Петербург,<br>
+ул Большая Конюшенная, д 19</p>
+</div>
+<div class="how__find-utim">
+  <h3>Режим работы</h3>
+  <p>Ежедневно, с 9:00 до 20:00</p>
+</div>
+<div class="how__find-utim">
+  <h3>Телефон</h3>
+  <p>8 (800) 333-55-99</p>
+</div>
+<div class="how__find-utim">
+  <h3>E-mail</h3>
+  <p>info@cat-hotel.ru</p>
+</div>
+<div class="how__find-utim">
+  <h3>Социальные сети</h3>
+  <div class="how__find-net">
+    <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+    <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
+    <a href="#"><img src="images/vk.svg" alt="vk"></a>
+</div>
+  </div>
+</div>
+</div>
+<div class="how__find-map" id="map">
+
+</div>
+</section>
+   <footer>
+<div class="footer__container">
+       <img src="images/logo.svg" alt="логотип">
+         <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#hotel" class="menu__link">Почему мы?</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#room" class="menu__link">Номера</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#comment" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#how__find" class="menu__link">Как нас найти</a>
+                        </li>
+                    </ul>
+                </nav>
+      </div>
+      <div class="footer__bottom">
+<div class="footer__container">
+<p class="footer__copy"><img src="images/copy.svg" alt="copy">2019 Все права защищены</p>
+<p class="footer__polit">Политика конфиденциальности</p>
+</div></div>
+   </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+   
+  </body>
+</html>
