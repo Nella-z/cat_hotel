@@ -61,7 +61,7 @@
 - Главная страница строится шаблоном `home.php` (Template Name: `home`).
 
 ## Скриншот
-![страница](images/index.png)
+![страница](assets/images/index.png)
 
 ## Ссылки
 
